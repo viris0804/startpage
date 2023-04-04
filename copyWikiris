@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SOURCE="/mnt/c/Users/IrisvanBreda/OneDrive - Joost-IT/Documenten/GTD/Wikiris"
+DESTINATION="/mnt/c/inetpub/wwwroot/wikiris"
+
+cp -r "$/mnt/c/Users/IrisvanBreda/OneDrive - Joost-IT/Documenten/GTD/Wikiris" "/mnt/c/inetpub/wwwroot/wikiris"
