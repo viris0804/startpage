@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<title>Startpagina</title>
+<style>
+	html {
+		align-items: center;
+		color: #d3d1d1;
+		display: flex;
+		font: 22px "Lucida Console", Monaco, monospace;
+		height: 100%;
+		justify-content: center;
+		margin: 0;
+		background-color: rgb(50, 57, 83);
+    background-image: url('background.jpg');
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+	}
+
+	body {
+		display: flex;
+		margin: 1em;
+		padding: 1em
+	}
+
+	h1 {
+		font-size: 2em;
+		grid-column: 1/-1;
+		margin: 0;
+		text-align: center
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none
+	}
+
+	a:focus,
+	a:hover {
+		color: #1d81b2
+	}
+
+	nav {
+		display: grid;
+		grid-row-gap: 1em;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 1em;
+		min-width: 24em;
+		padding: 1em 0
+	}
+
+	select {
+		font-size: 16px;
+		padding: 0.5em;
+		border: none;
+		background-color:rgba(237, 176, 171, 0.6);
+		color: #000000;
+		cursor: pointer;
+		appearance: none;
+	}
+
+  option {
+  background-color: rgb(50, 57, 83);
+  color: #ffffff;
+}
+	img {
+		border: 2px solid #313131;
+		height: auto;
+		object-fit: cover;
+		object-position: 50% 100%;
+		width: 8em
+	}
+</style>
+<nav>
+	<h1>Favorieten</h1>
+	<select id="mySelect" onchange="if(this.value) window.open(this.value)">
+		<option value="">Joost</option>
+		<option value="https://joost-support.4me.com/self-service">Zelfservice | Joost IT Support</option>
+		<option value="https://joostit.sharepoint.com/sites/Joost-IT984/SitePages/Even-voorstellen.aspx">Smoelenboek</option>
+		<option value="https://start.exactonline.nl/docs/Login.aspx?ReturnUrl=%2fdocs%2fMenuPortal.aspx">Exact Online</option>
+		<option value="https://joostit.sharepoint.com/_layouts/15/sharepoint.aspx">SharePoint</option>
+		<option value="https://www.office.com/?auth=2&home=1">Office 365</option>
+		<option value="https://joostit-pinkelephant.anewspring.nl/do?action=home">Pink elephant</option>
+		<option value="https://forms.office.com/Pages/DesignPage.aspx">Microsoft Forms</option>
+		<option value="https://candidateportal.apmg-international.com/#/exams/2000849568/take/proctor-u">APMG Candidate Portal</option>
+		<option value="https://mijn.leaseplan.nl/auth/selfservice/application-switch/redirect">Mijn LeasePlan</option>
+		<option value="https://page.topdesk.com/en/topdesk-tutorial-overview">TOPdesk | Tutorials Overview</option>
+		<option value="https://job.ubrijk.nl/hc/nl">Uren schrijven CBG</option>
+		<option value="https://teams.microsoft.com/">Microsoft Teams</option>
+		<option value="https://outlook.office.com/mail/">Outlook</option>
+  </select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">Tools</option>
+		<option value="http://simpledesktops.com/">Simple Desktops</option>
+		<option value="https://www.rijkshuisstijl.nl/basiselementen/beeld/iconen-en-pictogrammen/overzicht-iconen">Overzicht iconen rijkshuisstijl | Basiselementen | Rijkshuisstijl</option>
+		<option value="https://privnote.com/">Private note</option>
+		<option value="https://www.eclecticsite.be/calc/tijdnaardecimaal.htm">Tijd omrekenen naar decimale uren en omgekeerd </option>
+		<option value="https://emptycharacter.com/">Empty Characters, Whitespaces &amp; Blank Unicode Characters</option>
+		<option value="https://separator.mayastudios.com/">bookmark bar seperator</option>
+		<option value="https://convertico.com/">ConvertICO.com - Convert PNG to ICO</option>
+		<option value="https://unsplash.com/">unsplash</option>
+		<option value="https://www.pexels.com/nl-nl/">Gratis stockfoto&#39;s Pexels</option>
+		<option value="https://webhook.site/">Webhook.site api test</option>
+		<option value="https://www.remove.bg/">Remove Background from Image – remove.bg</option>
+		<option value="https://sketchpad.app/nl/">Sketchpad - Tekenen, maken en delen!</option>
+		<option value="https://www.photopea.com/">Photopea | Online Photo Editor</option>
+		<option value="https://en.savefrom.net/1-youtube-video-downloader-82/">YouTube Downloader</option>
+		<option value="https://www.kapwing.com/studio/editor">Kapwing video editor</option>
+		<option value="https://fonts.google.com/icons?selected=Material+Icons">Icons - Google Fonts</option>
+		<option value="https://www.recordcast.com/">Free Online Screen Recorder &amp; Video Editor | RecordCast</option>
+		<option value="https://cloudconvert.com/">CloudConvert</option>
+		<option value="https://smallpdf.com/nl">PDF tools</option>
+		<option value="https://dictation.io/speech">Voice Notepad - Speech to Text with Google Speech Recognition</option>
+		<option value="https://capturefullpage.com/">Capture full page - Screenshot Full web page - Capture full web page </option>
+		<option value="https://www.pdfdrive.com/">PDF Drive - Search and download PDF files for free.</option>
+		<option value="https://www.spelcheck.nl/tekstcontrole">spelling checker</option>
+		<option value="https://joost-it-test.topdesk.net/tas/secure/login/saml">Inloggen als behandelaar</option>
+		<option value="https://cheatography.com/tag/windows/">cheat sheets</option>
+		<option value="http://www.convertcsv.com/csv-to-json.htm">CSV To JSON Converter</option>
+		<option value="https://convert.io/">convert.io - The Ultimate File Converter</option>
+		<option value="https://jenni.ai/">Supercharge Your Writing with AI | Jenni</option>
+		<option value="https://tinywow.com/">TinyWow</option>
+		<option value="https://coverr.co/">Free Stock Video Footage, Royalty Free Videos for Download</option>
+		<option value="https://blush.design/">Blush: Illustrations for everyone</option>
+		<option value="https://carrd.co/build">Choose a Starting Point - Carrd</option>
+		<option value="https://untools.co/">Tools for better thinking | Untools</option>
+		<option value="https://beta.openai.com/playground">Playground - OpenAI API</option>
+		<option value="https://www.craiyon.com/">Craiyon, formerly DALL-E mini</option>
+		<option value="https://makemydrivefun.com/">MAKE MY DRIVE FUN</option>
+		<option value="https://carrd.co/">Carrd - Simple, free, fully responsive one-page sites for pretty much anything </option>
+		<option value="https://screenshot.guru/">Screenshot Guru - Online Screen Capture for Websites</option>
+		<option value="https://github.com/public-apis/public-apis">public apis</option>
+		<option value="https://thenounproject.com/">Noun Project: Free Icons &amp; Stock Photos for Everything</option>
+		<option value="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS</option>
+		<option value="https://thenounproject.com/icons/">Free Icons and Royalty-Free Images For Everyone | Noun Project </option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">Leren</option>
+		<option value="https://www.udemy.com/course/scrum-certification/learn/lecture/2043888#overview">Scrum Certification 2022</option>
+		<option value="https://www.edx.org/">edX | Free Online Courses by Harvard, MIT, &amp; more | edX</option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">Api docs</option>
+		<option value="https://developers.topdesk.com/">Api docs</option>
+		<option value="https://developers.topdesk.com/explorer/?page=change">Change API</option>
+		<option value="https://developers.topdesk.com/explorer/?page=supporting-files">Supporting Files API</option>
+		<option value="https://developers.topdesk.com/explorer/?page=assets">Asset Management API</option>
+		<option value="https://developers.topdesk.com/explorer/?page=incident">Incident Management | TOPdesk API</option>
+		<option value="https://www.alvechurchdata.co.uk/foxtext.htm">foxpro documentatie</option>
+		<option value="https://releasenotes.topdesk.com/">TOPdesk Release Notes</option>
+		<option value="https://bestpractice.topdesk.net/">Best practice TOPdesk</option>
+		<option value="https://topdeskforum.laansloot.nl/">TOPdesk-forum - Forum voor en door TOPdesk-gebruikers</option>
+		<option value="https://tip.topdesk.com/app/#/login">TIP TOPdesk</option>
+		<option value="https://page.topdesk.com/en/topdesk-tutorial-overview">TOPdesk | Tutorials Overview</option>
+		<option value="https://trello.com/b/qdH51G8x/topdesk-product-roadmap">TOPdesk Product Roadmap | Trello</option>
+		<option value="https://status.topdesk.com/">TOPdesk SaaS Status page Status</option>
+		<option value="https://3sjw6jwodj.execute-api.eu-central-1.amazonaws.com/source">Importwizard 1.0 Peter</option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">Joost TD</option>
+		<option value="https://joost-it.topdesk.net/">Joost Prod</option>
+		<option value="https://joost-it-test.topdesk.net/">Joost Test</option>
+		<option value="https://joost-it-demo.topdesk.net/">Joost Demo</option>
+		<option value="https://europe-demo-78.topdesk.net/">Bootcamp case</option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">DIZ</option>
+		<option value="https://ssc-i.connect.minvenj.nl/">DIZ SSCI Desktop</option>
+		<option value="https://topdesk-my.sharepoint.com/:x:/r/personal/remcoa_topdesk_com/_layouts/15/Doc.aspx?sourcedoc=%7BF44F20CD-92DA-4448-9E39-67DDEEDD3D5E%7D&file=Wijzigingen%20bijhouden%20-T%20en%20-A.xlsx&action=default&mobileredirect=true&cid=4af4f61a-25b8-4a72-9785-9f647526bca9"> Wijzigingen bijhouden -T en -A.xlsx</option>
+		<option value="https://topdesk-my.sharepoint.com/personal/remcoa_topdesk_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fremcoa%5Ftopdesk%5Fcom%2FDocuments%2FTOPdesk%20opdrachtmanager"> TOPdesk opdrachtmanager - OneDrive</option>
+		<option value="https://spar.topdesk.net/tas/secure/mango/window/48?t=1637841416010">TOPdesk - Copy Action field from activity to main Change</option>
+		<option value="https://rijksvideo.webex.com/wbxmjs/joinservice/sites/rijksvideo/meeting/download/ac47fe01f9f149788c143af6c75b81ef?siteurl=rijksvideo&MTID=m12b2f70b36ad991535658b88ec25a501"> vrijdag stand up</option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">TVM</option>
+		<option value="https://tvm-test.topdesk.net/tas/secure/login/form">TVM Test</option>
+		<option value="https://tvm.topdesk.net/tas/secure/mango/window/0?t=1680005186680">TOPdesk prod</option>
+		<option value="https://jira.tvm.nl/secure/RapidBoard.jspa?rapidView=470&projectKey=ZP&view=planning.nodetail&issueLimit=100"> Jira</option>
+		<option value="https://tvmnl.sharepoint.com/sites/ZandvoortOperatieU/_layouts/15/Doc.aspx?sourcedoc=%7B5debb0bb-ee72-4350-b6ec-ba6a41aac5ea%7D&action=edit&wd=target%28TOPdesk.one%7C197d6d57-85e7-41d3-9db2-d082d9d97b92%2FInrichting%7Cb360f178-7342-44e1-b2de-53a487f83741%2F%29&wdorigin=NavigationUrl"> onenote</option>
+		<option value="https://tvmnl.sharepoint.com/sites/ZandvoortOperatieU/Gedeelde%20documenten/Forms/AllItems.aspx?id=%2Fsites%2FZandvoortOperatieU%2FGedeelde%20documenten%2FGeneral&viewid=a8a94911%2D50b4%2D4a1f%2Dad58%2D5d452bc01381"> TVM Sharepoint Zandvoort project</option>
+		<option value="https://tvmnl.sharepoint.com/:x:/r/sites/ZandvoortOperatieU/_layouts/15/Doc.aspx?sourcedoc=%7B2CA5CD44-BB35-4366-9A23-C6F8FA4FCCCB%7D&file=Data%20Model%20Dictionary%20TOPdesk.xlsx&action=default&mobileredirect=true"> Data Model Dictionary TOPdesk.xlsx</option>
+		<option value="https://platform.select.hr/timeregistration/agreement/overview">Tijdschrijven</option>
+	</select>
+	<select onchange="if(this.value) window.open(this.value)">
+		<option value="">Competence Center</option>
+		<optgroup label="KEMBIT">
+			<option value="https://support.kembit.nl/tas/secure/login/form">TOPdesk kembit prod</option>
+			<option value="https://tdacc.kembit.nl/tas/secure/login/form">TOPdesk Kembit ACC</option>
+			<option value="https://apps.mypurecloud.de/directory/#/person/15fef07a-63a2-4987-aaa2-24ebe0f5ebc4">Genesys cloud </option>
+			<option value="https://developer.mypurecloud.de/developer-tools/#/api-explorer">Developer Tools genesys cloud </option>
+		</optgroup>
+		<optgroup label="Gemeente Lelystad">
+			<option value="https://lelystad.topdesk.net/tas/secure/login/form">Lelystad Prod</option>
+			<option value="https://lelystad-test.topdesk.net/tas/secure/login/form">Lelystad Test</option>
+			<option value="https://www.cm.com/en-gb/app/dashboard/2c395895-ad42-4215-bc58-88aea53554bd">CM Dashboard</option>
+		</optgroup>
+    </select>
+		<select onchange="if(this.value) window.open(this.value)">
+			<option value="">AWS VA</option>
+			<option value="https://8x3gdp771k.execute-api.eu-central-1.amazonaws.com/stop">Stop VA</option>
+			<option value="https://8x3gdp771k.execute-api.eu-central-1.amazonaws.com/start">Start VA</option>
+			<option value="https://8x3gdp771k.execute-api.eu-central-1.amazonaws.com/status">Status VA</option>
+		</select>
+		<select onchange="if(this.value) window.open(this.value)">
+			<option value="">Privé</option>
+			<option value="https://www.f1fantasyanalysis.com/">Fantasy Formula One Team Analysis | F1 Fantasy Analysis </option>
+			<option value="https://fantasy.formula1.com/app/#/league/269259">League - Joost-IT - F1 Fantasy</option>
+			<option value="https://f1tv.formula1.com/">F1 TV</option>
+			<option value="https://www.formula1.com/">F1 - The Official Home of Formula 1® Racing</option>
+    </select>
+		<select onchange="if(this.value) window.open(this.value)">
+      <option value="">Archief</option>
+      <optgroup label="SPAR">
+        <option value="https://spar.topdesk.net/">SPAR PROD</option>
+        <option value="https://spar.topdesk.net/tas/secure/mango/window/22?t=1625824547822">SPAR PROD</option>
+        <option value="https://spar-test.topdesk.net/tas/secure/mango/window/48?t=1625824378653">SPAR TEST</option>
+        <option value="https://spar-test.topdesk.net/tas/public/login/form">SPAR TEST SSP</option>
+      </optgroup>
+      <optgroup label="Bij12">
+        <option value="https://bij12-test.topdesk.net/">Bij12</option>
+      </optgroup>
+			</select>
+			<select onchange="if(this.value) window.open(this.value)">
+				<option value="">Servicenow</option>
+				<option value="https://docs.servicenow.com/">Product Documentation | ServiceNow</option>
+				<option value="https://nowlearning.servicenow.com/">Now Learning</option>
+				<option value="https://developer.servicenow.com/dev.do">ServiceNow Developers</option>
+				<option value="https://nowlearning-nlinst00661134-001.lab.service-now.com/now/nav/ui/home">Snow Lab instance</A>
+			</select>
+</nav>
+<!-- <img alt="foto" src=library_picture.jpg> -->
+
+<script>
+  function resetSelect() {
+    document.getElementById("mySelect").selectedIndex = 0;
+  }
+  var links = document.querySelectorAll("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", resetSelect);
+  }
+  </script>
